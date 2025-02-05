@@ -6,6 +6,8 @@ You will simulate the concert ticket booking system using multiple customer requ
 - Booking agents (threads) allocate tickets based on availability
 - The total ticket count must stay consistent and be synchronized across the booking agents
 - You must queue the customer requests in a queue, whose size is limited by the constant MAX_BUFFER_SIZE (set to 5)
+- If 0 < `number of tickets remaining` < `number of tickets requested by a customer`, the customer is given `number of tickets remaining` tickets
+- If the tickets are exhausted (`number of tickets remaining` = 0), all the customers after that will be allotted 0 tickets
 
 A serial implementation of the system is provided in `concert_serial.cpp`. Your job is to parallelize this and write it in another file `concert_parallel.cpp`. Feel free to write the parallel code from scratch too!
 
