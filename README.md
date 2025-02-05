@@ -12,12 +12,11 @@ A serial implementation of the system is provided in `concert_serial.cpp`. Your 
 This assignment will be manually evaluated. Grading will be transparent and any loss of marks will be explained.
 
 ## Input format
-The input has the first line as the total tickets available for the show, second line as the number of booking agents (threads you are allowed to create). Followed by this will be `n` lines with the format <Customer_name><space><no_of_tickets_requested>
+The input has the first line as the total tickets available for the show. Followed by this will be `n` lines with the format <customer_name><space><no_of_tickets_requested>
 
 A sample input is
 ```
 10
-2
 A 4 
 B 2 
 C 1
@@ -43,4 +42,5 @@ Customer 2 given 2 tickets
 Customer 3 given 1 tickets
 Customer 4 requested 2 tickets
 Customer 4 given 2 tickets
+Remaining tickets: 1
 ```

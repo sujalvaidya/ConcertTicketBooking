@@ -53,7 +53,6 @@ int main() {
     string name;
     
     file >> totalTickets;
-    file >> numAgents;
     
     int tickets;
 
